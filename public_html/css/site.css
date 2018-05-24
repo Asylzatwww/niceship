@@ -1,0 +1,823 @@
+html,
+body {
+    height: 100%;
+
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 50px 15px 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* here goes my style */
+
+.dl-nav {
+background: #1B2732 none repeat scroll 0% 0%;
+box-shadow: 0px 5px 10px 0px rgba(71, 71, 71, 0.3);
+z-index: 1030;
+border-radius: 0px;
+}
+
+.dl-nav .navbar-nav > li > a {
+padding-top: 24px;
+padding-bottom: 24px;
+font-size: 16px;
+color: #FCFCFC;
+font-weight: 400;
+transition: color 0.25s ease-out 0s;
+}
+
+.dl-nav .navbar-nav > .dl-register > a {
+padding-top: 20px;
+padding-bottom: 20px;
+margin-top: 4px;
+margin-bottom: 4px;
+}
+
+.navbar-brand {
+    padding:0px;
+}
+
+.dl-nav .navbar-nav > li > a:hover, .dl-nav .navbar-nav > li > a:focus {
+    color: #3B89CB;
+}
+
+.sh-navbar {
+    background: #fff;
+    margin: 0px;
+    border:0px;
+    min-height: 40px;
+}
+
+.sh-navbar .navbar-nav > li > a:hover, .sh-navbar .navbar-nav > li > a:focus {
+    color: #000;
+}
+
+.sh-navbar .navbar-nav > li > a {
+    color: #000;
+    padding-top: 10px;
+padding-bottom: 10px;
+}
+
+ .scrollTop {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: white;
+    position: fixed;
+    bottom: 60px;
+    cursor:pointer;
+    margin-left: 1010px;
+    box-shadow: 0px 2px 5px 2px #D0D0D0;
+    display:none;
+}
+
+.scrollTop span {
+    margin-top: 11px;
+font-size: 24px;
+color: red;
+text-align: center;
+width: 100%;
+}
+
+/* here goes main page content */
+
+#home-banner {
+    background: #354E6C url("/img/hp_default5.jpg") no-repeat scroll center center / cover;
+    min-height: 700px;
+    position: relative;
+    text-align: center;
+    margin-top: -90px;
+}
+
+#home-banner h2 {
+    color: #FFF;
+    font-size: 5em;
+    margin-bottom: 5%;
+    margin-top: 0px;
+    padding-top: 6%;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+#home-banner .advantages {
+    margin: 50px auto 0px;
+    text-align: center;
+    color: #FFF;
+}
+
+#home-banner ul.expHP-benefits {
+    list-style: outside none none;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    padding-left: 0px;
+}
+
+/***/
+
+#home-hiw, #home-hiw > ol > li {
+    text-align: center;
+    font-size: 16px;
+}
+
+#main-hiw .delivcount {
+border-radius: 48px;
+background: #FF7300 none repeat scroll 0% 0%;
+position: absolute;
+z-index: 999;
+text-align: center;
+color: white;
+font-size: 18px;
+padding: 1px 9px;
+}
+
+#main-hiw .delivcount0, #main-hiw .delivcount2, #main-hiw .delivcount4 {
+top: -8px;
+right: 88px; 
+}
+
+#main-hiw .delivcount1, #main-hiw .delivcount3 {
+top: -22px;
+right: 88px;
+}
+
+
+#main-hiw h2 {
+padding: 0px 0px 50px 0px;
+font-size: 26px;
+}
+
+#main-hiw ol > li img {
+    display: block;
+    margin: 0px auto 30px;
+}
+
+#main-hiw ol > li .trans12 {
+background: transparent url("/img/hiw-v2_12.png") no-repeat scroll center center;
+height: 21px;
+width: 160px;
+top: 30px;
+left: 205px;
+}
+
+#main-hiw ol > li .trans {
+    position: absolute;
+    z-index: 1;
+}
+
+#main-hiw ol > li .trans23 {
+background: transparent url("/img/hiw-v2_23.png") no-repeat scroll center center;
+height: 32px;
+width: 159px;
+top: 23px;
+left: 221px;
+}
+
+/***/
+
+#home-hiw, #home-hiw > ol > li {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+#home-hiw h2 {
+padding: 0px 0px 50px 0px;
+font-size: 26px;
+}
+
+#home-hiw ol > li img {
+    display: block;
+    margin: 0px auto 30px;
+}
+
+#home-hiw ol > li .trans12 {
+    background: transparent url("/img/hiw-v2_12.png") no-repeat scroll center center;
+    height: 21px;
+    width: 189px;
+    top: 30px;
+    left: 285px;
+}
+
+#home-hiw ol > li .trans {
+    position: absolute;
+    z-index: 1;
+}
+
+#home-hiw ol > li .trans23 {
+    background: transparent url("/img/hiw-v2_23.png") no-repeat scroll center center;
+    height: 32px;
+    width: 186px;
+    top: 23px;
+    left: 300px;
+}
+
+#home-benefits {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#home-benefits .row > li {
+    padding: 10px 50px 30px 130px;
+    background-position: left 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#home-benefits .row > .benefit1 {
+    background-image: url("/img/cheap-rates.png");
+}
+
+#home-benefits .row > .benefit2 {
+    background-image: url("/img/rentable-fast.png");
+}
+
+#home-benefits .row > .benefit3 {
+    background-image: url("/img/shopping-assistant.png");
+}
+
+#home-why-use {
+    padding-bottom: 30px;
+    background: #F7F5F5 none repeat scroll 0% 0%;
+}
+
+#home-why-use h2 {
+    text-align: center;
+    padding: 30px 0px;
+    margin: 0px;
+    font-size: 26px;
+}
+
+#home-why-use h3 {
+    font-size: 22px;
+    margin: 0px;
+    padding: 10px 0px 20px;
+}
+
+#home-why-use .row > li {
+    padding: 20px 80px;
+    background-position: left 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    min-height: 250px;
+}
+
+#home-why-use .row > .whyuse1 {
+    background-image: url("/img/whyuse1.png");   
+}
+
+#home-why-use .row > .whyuse2 {
+    background-image: url("/img/whyuse2.png");   
+}
+
+#home-why-use .row > .whyuse3 {
+    background-image: url("/img/whyuse3.png");   
+}
+
+#home-why-use .row > .whyuse4 {
+    background-image: url("/img/whyuse4.png");   
+}
+
+#home-why-use .row > .whyuse5 {
+    background-image: url("/img/whyuse5.png");   
+}
+
+#home-why-use .row > .whyuse6 {
+    background-image: url("/img/whyuse6.png");   
+}
+
+#home-where h2 {
+    text-align: center;
+    padding: 30px 0px 20px;
+    margin: 0px;
+    font-size: 26px;
+}
+
+#home-where h3 {
+    text-align: center;
+    padding: 10px 0px 50px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+#home-where li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+#home-where li a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+}
+
+#home-where ul, #home-where p {
+    text-align: center;
+}
+
+#home-where li img {
+    display: inline-block;
+}
+
+#home-testimonials {
+    background: #F7F5F5 none repeat scroll 0% 0%;
+    margin-bottom: 70px;
+}
+
+#home-testimonials h2 {
+    text-align: center;
+    padding: 30px 0px;
+    margin: 0px;
+    font-size: 26px;
+}
+
+#home-testimonials blockquote {
+    direction: ltr;
+    border: medium none;
+    color: #333;
+    font-size: 14px;
+    position: relative;
+    background: #FFF none repeat scroll 0% 0%;
+}
+
+#home-testimonials blockquote::before {
+    direction: ltr;
+    color: #999;
+    content: "“";
+    display: inline;
+    font-size: 24px;
+    line-height: 12px;
+    margin: 0px 6px 0px 0px;
+    position: relative;
+    top: 8px;
+}
+
+#home-testimonials blockquote::after {
+    content: "";
+    position: absolute;
+    bottom: -31px;
+    left: 50px;
+    border-width: 16px 12px;
+    border-style: solid;
+    border-color: #FFF transparent transparent;
+}
+
+#home-testimonials h3 {
+    padding: 0px 0px 20px 50px;
+    font-size: 14px;
+}
+
+
+/* here ends main page content */
+
+#footer-social {
+    background: #1B2732 none repeat scroll 0% 0%;
+    padding: 30px 0px 20px;
+    border-bottom: 3px solid #FFF;
+    text-align: center;
+}
+
+#footer-social h2 {
+    color: #FFF;
+    font-size: 20px;
+    font-family: "Oswald-Regular",Arial,sans-serif;
+    margin: 0px 10px 0px 0px;
+    line-height: 60px;
+}
+
+#footer-social h2, #footer-social ul, #footer-social li {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#footer-social li {
+    margin: 0px 10px 0px 0px;
+}
+
+#footer-categories {
+    background: #1B2732 none repeat scroll 0% 0%;
+    margin: 0px 0px 10px;
+    padding: 30px 0px;
+}
+
+#footer-categories h2 {
+    color: #CCC;
+    font-size: 15px;
+    margin: 0px 0px 30px;
+    text-decoration: underline;
+}
+
+#footer-categories a {
+    color: #CCC;
+    font-size: 14px;
+}
+
+#footer-partners {
+    text-align: center;
+}
+
+#footer-partners h2 {
+    font-family: inherit;
+    margin: 0px;
+    padding: 0px 0px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+
+#footer-partners h2, #footer-partners ul, #footer-partners li {
+    display: inline-block;
+    padding: 0px;
+}
+
+#footer-partners ul {
+    margin: 0px;
+}
+
+#footer-partners img {
+    border: 1px solid #EDEDED;
+    margin: 0px 0px 10px;
+}
+
+.footer-copyright ul {
+    text-align: right;
+    margin: 0px;
+}
+
+.footer-copyright ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.footer-copyright ul li a {
+    color: #333;
+}
+
+/* signup page  */
+
+#register h1 {
+    text-align: center;
+}
+
+#register h1 span {
+    display: block;
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+#register h1 span img {
+    margin: 0px 0px 0px 10px;
+}
+
+#register-box {
+    box-shadow: 0px 0px 10px 0px rgba(120, 120, 120, 0.3);
+    width: 90%;
+    margin: 0px auto;
+    background: #F7F5F5 none repeat scroll 0% 0%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#register-form-wrapper {
+background: #95D1FF none repeat scroll 0% 0%;
+padding-bottom: 32767px;
+margin-bottom: -32767px;
+}
+
+#register-form-wrapper h2 {
+    margin: 0px;
+    padding: 40px 0px 30px 20px;
+}
+
+#register-form-wrapper form {
+    width: 70%;
+    padding: 0px 0px 30px 20px;
+}
+
+#register-form-wrapper .control-label {
+    margin-bottom: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#register-form-wrapper button {
+    margin: 30px 0px 0px;
+width: 100%;
+font-size: 20px;
+}
+
+
+
+#register-meta h2 {
+    margin: 40px 0px 50px 20px;
+}
+
+#register-meta li {
+    overflow: hidden;
+    padding: 0px 0px 40px;
+    font-size: 96%;
+}
+
+#register-meta ol img {
+    float: left;
+    margin: 0px 20px 14px 0px;
+}
+
+#register-meta ol b {
+    text-transform: uppercase;
+}
+
+#register-meta p, #register-meta ol {
+    margin: 0px 30px 0px 20px;
+}
+
+/* signup page ends up here */
+
+
+/* login page starts here */
+
+.site-login button {
+    width: 100%;
+font-size: 20px;
+}
+
+.site-login h1 {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.site-login .inner {
+    background: #F8F9FB none repeat scroll 0% 0%;
+padding: 10px 30px 30px;
+}
+
+/* login page ends here */
+
+
+/* delivery product */
+
+.product {
+border: 1px solid #E3E3E3;
+background-color: #FFF;
+height: 435px;
+}
+
+.pr-height {
+    margin: 30px 10px;
+}
+
+.pr-height img {
+    display: block;
+    margin: 0 auto;
+    max-height: 175px;
+}
+
+.product h3 {
+    font-size: 16px;
+}
+
+.product .prize {
+    font-size: 22px;
+    width: 100%;
+}
+
+/* delivery producrt ends up here */
+
+/* index file for user profile */
+
+.qwintry-addr {
+    border-radius: 5px;
+    background: transparent url("/img/bg-user-address-stripes.png") repeat scroll left top;
+    padding: 7px 6px 6px 7px;
+    box-shadow: 1px 1px 0px #BAB180;
+    margin-bottom: 15px;
+}
+
+.qwintry-addr-in {
+    padding: 0px 15px;
+    background: rgb(245, 239, 227) none repeat scroll 0% 0%;
+}
+
+.member-home-mkg {
+    height: auto;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid #D2D2D2;
+}
+
+.mkg-inner {
+    padding: 0px 15px;
+}
+
+.member-home-mkg .prod h3, .member-home-mkg .prod h4 {
+    text-align: center;
+}
+
+.member-home-mkg .prod img {
+    width: 230px;
+display: block;
+margin: 10px auto 0px;
+}
+
+.member-small h3 {
+    font-size:21px;
+}
+
+.member-small h4 {
+    font-size:16px;
+}
+
+.member-small h3 a, .member-small h4 a {
+    color: #656565;
+}
+
+.member-small h3 a:hover, .member-small h4 a:hover {
+    color: #505050;
+}
+
+/* index file for user profile ends up here */
+
+/* bs css */
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0px;
+    border-width: 1px 1px 1px 5px;
+    border-style: solid;
+    border-color: #EEE;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-radius: 3px;
+}
+
+.bs-callout-danger {
+    border-left-color: #CE4844;
+}
+
+.bs-callout-info {
+    border-left-color: #1B809E;
+}
+
+
+/* bs css ends up here */
+
+/* alltransfer check style */
+
+.check {
+    //
+}
+
+.check img {
+    //width:100%;
+}
+
+.check .ch-height {
+    border: 1px solid #DBDBDB;
+border-top: 0px;
+border-bottom: 0px;
+padding: 10px;
+margin-top: -40px;
+}
+
+.check .ch-height .row img {
+    width: 90%;
+display: block;
+margin: 10px auto;
+}
+
+/* alltransfer check style ends up here */
+
+/* how it works */
+
+#hiw-get-started, #hiw-sign-up, #hiw-shop-anywhere, #hiw-ship-to-borderlinx, #hiw-save-on-shipping {
+    overflow: hidden;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 100px 0px;
+    font-size: 15px;
+}
+
+#hiw-home-delivery, #hiw-shopping {
+    padding: 100px 0px;
+}
+
+
+
+/* how it works ends up here */
+
+/* about */
+
+#about-us-banner.container-banner {
+    height: 314px;
+    background: #B1C6D3 none repeat scroll 0% 0%;
+    width: 100%;
+    margin-top: -90px;
+}
+
+#about-us-banner h1 {
+    margin-top: 0px;
+    padding-top: 8%;
+    background: #B1C6D3 url("http://a.bximg.net/images/marketing/about-us/about_us_banner.jpg") no-repeat scroll left center;
+    color: #FFF;
+    height: 314px;
+}
+
+#who-we-are h2, #management-team h2 {
+    text-align: center;
+    padding: 3% 0px;
+}
+
+#management-team {
+    background: #EEE none repeat scroll 0% 0%;
+    margin-top: 3%;
+}
+
+/* about ends up here */
